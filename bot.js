@@ -4,14 +4,12 @@ function createBot() {
     const bot = mineflayer.createBot({
         host: 'mundodoscria-5gg5.aternos.me', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
         port: 51780,                // Puerto predeterminado de Minecraft
-        username: 'Botzinho',    // Nombre genérico del bot/NPC dentro del juego
+        username: 'Raboot_356',    // Nombre genérico del bot/NPC dentro del juego
         version: false              // Autodetecta la versión exacta del servidor (1.8 a 1.21+)
     });
 
     bot.on('spawn', () => {
         console.log(`[NPC] El bot ha aparecido correctamente en el mapa.`);
-        // Si tu servidor No-Premium requiere contraseña, descomenta la línea de abajo:
-        // setTimeout(() => bot.chat('/login erickJKN'), 4000);
     });
 
     bot.on('login', () => {
